@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+<title>IJsselsunsets - Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet">
+</head>
+
+<br>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <a href="index.html"><img src="images/logo.png" class="logo" title="Home"></a>
+            <nav class="navi">   
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">Over</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>    
+        </div>
+
+        <div class="main">
+            <h2>Contact</h2>
+            <p>Heb je een vraag aan mij of heb je een idee hoe ik deze fenomenale site nog beter kan coderen? Neem dan contact met mij op via onderstaand formulier. Wie weet contact ik terug.</p>
+            <br>
+            <p>Tevens kan je via het formulier je eigen zonsondergangsfoto insturen! Vind ik hem te pruimen? Wie weet zie je hem dan - na een tijdje - online verschijnen. Caramba wat vet!</p>
+            <br>
+            <center><form name="contact_kok" method="POST" data-netlify="true" class="form">       
+                <div class="row">
+                    <div class="column">
+                        <label for="fname">Voornaam:</label><br>
+                        <input type="text" id="fname" name="voornaam" value="Jorn"><br>
+                        <label for="lname">Achternaam:</label><br>
+                        <input type="text" id="lname" name="achternaam" value="Leuverink"><br>
+                        <br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="mail" name="email" value="voorbeeld@voorbeeld.com"><br>
+                        <br>
+                        <label for="telefoon">Telefoonnummer:</label><br>
+                        <input type="tel" id="telefoon" name="phone" value="06 1234 5678"><br>
+                        <br>
+                        <label for="leeftijf">Leeftijd:</label><br>
+                        <input type="number" id="leeftijd" name="leeftijd" value="28"><br>
+                        <br>
+                        <label for="geboortedag">Geboortedag:</label><br>
+                        <input type="date" name="geboortedag" id="geboortedag"><br>
+                    </div>
+                    <div class="column">
+                        <label for="man">Geslacht:</label><br>
+                        <input type="radio" id="man" name="geslacht" value="Man">
+                        <label for="man">Man</label><br>
+                        <input type="radio" id="vrouw" name="geslacht" value="Vrouw">
+                        <label for="vrouw">Vrouw</label><br>
+                        <input type="radio" id="onzijdig" name="geslacht" value="Onzijdig">
+                        <label for="onzijdig">Onzijdig</label><br>
+                        <br>
+                        <label for="uwvraag">Uw vraag:</label><br>
+                        <textarea id="uwvraag" name="uwvraag" rows="4" cols="21" placeholder="Vertel het mij."></textarea><br>
+                        <br>
+                        <label for="myphoto">Upload uw zonsondergangsfoto:</label><br>
+                        <input type="file" id="myphoto" name="myphoto"><br>
+                        <br>
+                        <input type="submit" value="Verzenden">
+                        <input type="reset">
+                    </div>
+                </div>
+            </form></center>
+
+            <br>
+
+        </div>
+
+        <div class="footer">
+            <br>
+            <p><a href="index.html">Home</a> | <a href="about.html">Over</a> | <a href="contact.html">Contact</a></p>
+            <br>
+            <p style="text-align:center;"><img src="images/logo.png"></p>
+            <p>Copyright © Jorn Leuverink - 2022</p>
+            <br>
+        </div>
+
+    </div>
+
+</body>

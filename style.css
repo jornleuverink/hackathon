@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    border: 5px solid rgb(255, 255, 255);
+    color: black;
+    font-size: 14px;
+    font-family: 'Dosis';
+}
+
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 100px;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.main {
+    grid-column: 1 / -1;
+    background-color: rgb(255, 231, 180);
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
+
+.logo {
+    float: left;
+    padding-left: 30px;
+}
+
+.navi li {
+    float: right;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.navi a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 1px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.navi a:hover {
+    background-color: rgb(255, 214, 125);
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 12vw;
+}
+
+p {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 8vw;
+    padding-bottom: 10px;
+}
+
+.blogpost { 
+    width: 300px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-bottom: 17px;
+}
+
+.item {
+    flex-grow: 2;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
+
+@media only screen and (max-width: 420px) {
+    .logo { 
+        scale: 75%;
+        padding-left: 0px;
+    }
+    .navi a {
+        text-align: left;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .video { 
+        width: 280px;
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .row {
+        display: block;
+    }
+}
